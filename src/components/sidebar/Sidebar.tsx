@@ -23,25 +23,23 @@ export default function Sidebar() {
 		));
 
 	return (
-		<aside id="default-sidebar" className="fixed top-0 left-0 z-40 w-38 h-screen shadow-xl" aria-label="Sidebar">
-			<div className="flex flex-col justify-between h-full px-2 py-2">
-				<div className="flex flex-col">
-					{getOptions([
-						{ name: "Home", icon: PiHouseSimple },
-						{ name: "Marketplace", icon: PiBuildings },
-						{ name: "Collection", icon: PiWallet },
-						{ name: "Events", icon: PiCalendarDots },
-						{ name: "Community", icon: PiUsersThree },
-					])}
-				</div>
-				<div className="flex flex-col">
-					{getOptions([
-						{ name: "Settings", icon: PiWrench },
-						{ name: "Help", icon: PiInfo },
-					])}
-				</div>
+		<div className="flex flex-col justify-between w-38 h-full shadow-xl px-2 py-2">
+			<div className="flex flex-col">
+				{getOptions([
+					{ name: "Home", icon: PiHouseSimple },
+					{ name: "Marketplace", icon: PiBuildings },
+					{ name: "Collection", icon: PiWallet },
+					{ name: "Events", icon: PiCalendarDots },
+					{ name: "Community", icon: PiUsersThree },
+				])}
 			</div>
-		</aside>
+			<div className="flex flex-col">
+				{getOptions([
+					{ name: "Settings", icon: PiWrench },
+					{ name: "Help", icon: PiInfo },
+				])}
+			</div>
+		</div>
 	);
 }
 
