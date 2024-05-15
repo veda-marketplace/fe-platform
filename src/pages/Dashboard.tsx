@@ -9,7 +9,7 @@ export default function Dashboard() {
 			<Sidebar />
 			<div className="flex flex-col grow overflow-auto">
 				<h1 className="text-white text-5xl font-semibold my-10 mx-20">Welcome to VeDA</h1>
-				<div className="flex gap-6 snap-x h-[420px] snap-mandatory overflow-x-auto pb-4 mx-20">
+				<div className="flex gap-6 snap-x min-h-[350px] h-[25%] snap-mandatory overflow-x-auto pb-4 mx-20">
 					{Projects.map((value, _) => (
 						<Image
 							key={value.id}
@@ -79,7 +79,6 @@ const Image = ({ image, timeRemaining, highestBid }: ImageProps) => (
 		style={{ backgroundImage: `url('${image}')` }}
 		className={"flex flex-col p-5 justify-end snap-start shrink-0 aspect-video h-full bg-cover"}
 	>
-		{" "}
 		<div className="flex flex-row justify-between items-end">
 			<span className="text-white text-3xl font-bold">Cyberpunk Landscape</span>
 			<div className="flex flex-row justify-between items-center p-4 h-[80px] w-[260px] bg-gray-900 bg-opacity-50 text-white">
