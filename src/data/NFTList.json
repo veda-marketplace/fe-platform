@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"name": "Cosmic Cat",
+		"image": "src/assets/cat.jpg",
+		"type": "meme",
+		"price": 5.2,
+		"volume": 120,
+		"topOffer": 4.8,
+		"listed": 10
+	},
+	{
+		"id": 2,
+		"name": "Cosmic Cat",
+		"image": "src/assets/cat.jpg",
+		"type": "meme",
+		"price": 5.2,
+		"volume": 120,
+		"topOffer": 4.8,
+		"listed": 10
+	},
+	{
+		"id": 3,
+		"name": "Cosmic Cat",
+		"image": "src/assets/cat.jpg",
+		"type": "meme",
+		"price": 5.2,
+		"volume": 120,
+		"topOffer": 4.8,
+		"listed": 10
+	},
+	{
+		"id": 4,
+		"name": "Cosmic Cat",
+		"image": "src/assets/cat.jpg",
+		"type": "meme",
+		"price": 5.2,
+		"volume": 120,
+		"topOffer": 4.8,
+		"listed": 10
+	},
+	{
+		"id": 5,
+		"name": "Cosmic Cat",
+		"image": "src/assets/cat.jpg",
+		"type": "meme",
+		"price": 5.2,
+		"volume": 120,
+		"topOffer": 4.8,
+		"listed": 10
+	}
+]

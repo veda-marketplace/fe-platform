@@ -9,7 +9,20 @@ import { PiWrench } from "react-icons/pi";
 import { PiInfo } from "react-icons/pi";
 
 export default function Sidebar() {
-	const [selected, setSelection] = useState("Home");
+	const topOptions = [
+		{ name: "Home", icon: PiHouseSimple },
+		{ name: "Marketplace", icon: PiBuildings },
+		{ name: "Collection", icon: PiWallet },
+		{ name: "Events", icon: PiCalendarDots },
+		{ name: "Community", icon: PiUsersThree },
+	];
+
+	const bottomOptions = [
+		{ name: "Settings", icon: PiWrench },
+		{ name: "Help", icon: PiInfo },
+	];
+
+	const [selected, setSelection] = useState(topOptions[0].name);
 
 	const getOptions = (options: Array<{ name: string; icon: IconType }>) =>
 		options.map((value, index) => (
@@ -24,21 +37,8 @@ export default function Sidebar() {
 
 	return (
 		<div className="flex flex-col justify-between w-38 h-full shadow-xl px-2 py-2">
-			<div className="flex flex-col">
-				{getOptions([
-					{ name: "Home", icon: PiHouseSimple },
-					{ name: "Marketplace", icon: PiBuildings },
-					{ name: "Collection", icon: PiWallet },
-					{ name: "Events", icon: PiCalendarDots },
-					{ name: "Community", icon: PiUsersThree },
-				])}
-			</div>
-			<div className="flex flex-col">
-				{getOptions([
-					{ name: "Settings", icon: PiWrench },
-					{ name: "Help", icon: PiInfo },
-				])}
-			</div>
+			<div className="flex flex-col">{getOptions(topOptions)}</div>
+			<div className="flex flex-col">{getOptions(bottomOptions)}</div>
 		</div>
 	);
 }
